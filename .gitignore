@@ -1,8 +1,13 @@
 
-/packages
-/drop
-/bin
-/obj
 
+/src/packages
+/src/Moq/obj
+/src/Moq/bin
+/src/Moq.Core/obj
+/src/Moq.Core/bin
+/src/Moq.Core.UnitTests/bin
+/src/Moq.Core.UnitTests/obj
+/src/Moq.UnitTests/bin
+/src/Moq.UnitTests/obj
+/drop
 *.suo
-*.user
