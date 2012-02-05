@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<Import Condition="'$(Configuration)' == 'Release' And Exists($(T4Targets))"
+					Project="$(T4Targets)" />
+
+	<Target Name="AfterBuild"
+					Condition="!$(AssemblyName.Contains('Test'))">
+		<Exec Command="mkdir &quot;$(DropDir)&quot;"
+					Condition="!(Exists($(DropDir)))"
+					ContinueOnError="true"/>
+		<CreateItem Include="$(OutDir)$(TargetName).*">
+			<Output ItemName="BinariesToCopy" TaskParameter="Include"/>
+		</CreateItem>
+		<Copy SourceFiles="@(BinariesToCopy)"
+					DestinationFolder="$(DropDir)"
+					OverwriteReadOnlyFiles="true" />
+	</Target>
+
+</Project>

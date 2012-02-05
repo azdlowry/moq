@@ -1,3 +1,8 @@
 
-/src/packages
+/packages
 /drop
+/bin
+/obj
+
+*.suo
+*.user
