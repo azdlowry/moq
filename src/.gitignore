@@ -1,2 +1,12 @@
 
+/packages
+/Moq/obj
+/Moq/bin
+/Moq.Sdk/obj
+/Moq.Sdk/bin
+/Moq.Sdk.UnitTests/bin
+/Moq.Sdk.UnitTests/obj
+/Moq.UnitTests/bin
+/Moq.UnitTests/obj
 *.snk
+*.user

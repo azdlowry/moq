@@ -15,11 +15,11 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\src\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
+  <Import Project="..\Solution Items\Moq.properties" />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +27,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -41,9 +40,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICalculator.cs" />
+    <Compile Include="NonLambdaSpec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Moq.Sdk\Moq.Sdk.csproj">
+      <Project>{5967E307-A008-4EDB-B2DB-A97A1B9B1956}</Project>
+      <Name>Moq.Sdk</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Moq\Moq.csproj">
       <Project>{94C6E90B-5AC1-4A93-A57C-56DE4B1D9BE0}</Project>
       <Name>Moq</Name>

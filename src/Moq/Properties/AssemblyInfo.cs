@@ -1,36 +1,9 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
 [assembly: AssemblyTitle("Moq")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Moq")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("eb07529a-6463-48be-aeb3-a3d9966d626d")]
-
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyDescription("Mocking library for .NET")]
+[assembly: InternalsVisibleTo("Moq.UnitTests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100d1666c332db2290cab1e9e562ed9f46bc6b30dd191697ed1f64b5a4b1d3c5bf246c3edddc95b8aa1f6799d0ac0a825c5064c1553e5c11900486f8c2dcdc780e3a2de7b756144cd3946f99ee17794c9113889758f7c718013d5e630b5d1f2f2fd7761437351bb2d4bbbf4d787df365d9020e4d6bde62cce072b039e0c9ddd049d")]

@@ -1,5 +1,4 @@
-extensions: .cs
-#region BSD License
+﻿#region BSD License
 /*
 Copyright (c) 2007. Clarius Consulting, Manas Technology Solutions, InSTEDD
 http://moq.me
@@ -41,3 +40,16 @@ SUCH DAMAGE.
 See also: http://www.opensource.org/licenses/bsd-license.php
 */
 #endregion
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Moq.Sdk;
+
+namespace Moq
+{
+	public interface IMock
+	{
+		void AddBehavior(BehaviorPipeline behavior);
+	}
+}
